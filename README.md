@@ -187,8 +187,38 @@ The observed cancer treatment cost ($25,162) is inconsistent with typical health
 
 ## How to Use the Dashboard
 
-1. Navigate to the Overview section to understand dataset composition
-2. Explore Column Details to understand individual data fields
-3. Use analysis sections (Demographics, Medical Conditions, Insurance, etc.) with interactive filters
-4. Apply filters to drill down into specific patient segments
-5. Export insights for reporting and decision-making
+### Setup Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ponnu1601/healthcare-analysis-dashboard.git
+cd healthcare-analysis-dashboard
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Set up environment variables:
+- Copy `.env.example` to `.env`
+- Update with your MySQL credentials:
+```
+DB_USER=your_username
+DB_PASSWORD=your_password
+DB_HOST=localhost
+DB_NAME=your_database
+```
+
+4. Run the dashboard:
+```bash
+streamlit run app.py
+```
+### Using the Dashboard
+
+1. Navigate to the Overview section to understand dataset composition and view column details
+2. Explore Column Details by clicking on any column button to see data types, ranges, and descriptions
+3. Use analysis sections (Demographics, Medical Conditions, Insurance, Admission Type, Medication) by clicking on the respective boxes
+4. Apply interactive filters in each analysis section to drill down into specific patient segments
+5. View tables and charts to extract insights and understand healthcare patterns
+6. Use the insights for reporting and decision-making
