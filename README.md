@@ -212,7 +212,7 @@ DB_NAME=your_database
 
 4. Run the dashboard:
 ```bash
-streamlit run app.py
+streamlit run healthcare_dashboard.py
 ```
 ### Using the Dashboard
 
