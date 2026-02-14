@@ -78,19 +78,19 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Database connection with environment variables
-@st.cache_resource
+#@st.cache_resource
 def get_db_connection():
     try:
         db_user = os.getenv('DB_USER')
         db_password = os.getenv('DB_PASSWORD')
         db_host = os.getenv('DB_HOST')
         db_name = os.getenv('DB_NAME')
-        
+
         if not all([db_user, db_password, db_host, db_name]):
             st.error("Database credentials not found. Please set environment variables.")
             return None
         
-        engine = create_engine(f'mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}')
+        engine = create_engine(f'mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}', pool_pre_ping = True)
         return engine
     except Exception as e:
         st.error(f"Error connecting to database: {e}")
