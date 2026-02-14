@@ -194,22 +194,22 @@ healthcare-analysis-dashboard/
 **1. Dashboard Welcome Screen**
 Landing page introducing the dashboard capabilities with clear navigation to all analysis sections.
 
-![Dashboard Welcome](images/dashboard_welcome.png)
+![Dashboard Welcome](images/dashboard_welcome.PNG)
 
 **2. Dataset Overview**
 Summary statistics showing 55,392 records, 5-year timespan, 15 columns, and 100% data quality with interactive column explorer.
 
-![Dashboard Overview](images/dashboard_overview.png)
+![Dashboard Overview](images/dashboard_overview.PNG)
 
 **3. Demographics Analysis**
 Age distribution statistics with interactive filters for medical condition, insurance provider, and admission type allowing drill-down analysis.
 
-![Demographics Analysis](images/demographics_analysis.png)
+![Demographics Analysis](images/demographics_analysis.PNG)
 
 **4. Medical Conditions Analysis**
 Billing comparison across 6 medical conditions with data table and interactive bar chart showing cost patterns and patient counts.
 
-![Medical Conditions Analysis](images/medical_conditions_analysis.png)
+![Medical Conditions Analysis](images/medical_conditions_analysis.PNG)
 
 ---
 
