@@ -169,25 +169,20 @@ healthcare-analysis-dashboard/
 
 ## Key Insights
 
-### 1. Cost Standardization Pattern
-**Finding:** Billing costs vary by only $644 (2.5%) across all 6 medical conditions despite treating diverse patient populations.
+### 1. Exceptional Cost Standardization
+**Finding:** Billing costs vary by only $644 (2.5%) across all 6 medical conditions and less than 1% across insurance providers and admission types.
 
-**Impact:** Exceptional cost predictability enables accurate budgeting and resource planning, but may mask underlying complexity differences.
+**Impact:** Enables highly predictable budgeting and resource planning, though may mask underlying treatment complexity differences requiring investigation.
 
-### 2. Gender-Based Billing Difference
-**Finding:** Consistent $137 higher billing for one gender (0.54% difference) across all conditions, insurance types, and admission types.
+### 2. Gender-Based Billing Pattern
+**Finding:** Consistent $137 higher billing (0.54%) for one gender across all conditions, insurance types, and admission types.
 
-**Impact:** Warrants investigation for potential treatment pathway differences or equity concerns in care delivery.
+**Impact:** Warrants investigation for potential treatment pathway differences or equity concerns in care delivery protocols.
 
 ### 3. Cancer Treatment Cost Anomaly
-**Finding:** Cancer treatment shows the lowest average billing ($25,162) despite typically being among the most expensive conditions.
+**Finding:** Cancer shows lowest average billing ($25,162) despite typically being among the most expensive conditions to treat.
 
-**Impact:** Suggests potential data collection gaps or exceptional efficiency in cancer care protocols requiring validation.
-
-### 4. Insurance Provider Neutrality
-**Finding:** Less than 1% cost variation across 5 insurance providers indicates insurance type does not drive healthcare costs in this system.
-
-**Impact:** Internal delivery processes, not insurance leverage, determine pricing — enabling consistent cost forecasting.
+**Impact:** Suggests potential data collection gaps or exceptional cost efficiency requiring validation against industry benchmarks.
 
 ### Visualizations
 
@@ -215,55 +210,17 @@ Billing comparison across 6 medical conditions with data table and interactive b
 
 ## Business Recommendations
 
-### Immediate Priorities
-
 **1. Investigate Gender-Based Billing Variance**
-- **Finding:** $137 consistent difference across all segments
-- **Action:** Analyze treatment protocols and procedure selection by gender
-- **Expected Impact:** Ensure equitable care delivery and identify protocol optimization opportunities
+- Analyze treatment protocols and procedure selection by gender
+- Expected Impact: Ensure equitable care delivery and identify protocol optimization opportunities
 
 **2. Validate Cancer Treatment Costs**
-- **Finding:** Unexpectedly low costs ($25,162) vs industry norms
-- **Action:** Verify data completeness and benchmark against external sources
-- **Expected Impact:** Confirm data quality or uncover cost efficiency opportunities
+- Verify data completeness and benchmark against industry standards
+- Expected Impact: Confirm data quality or uncover cost efficiency opportunities
 
-**3. Analyze Medication Cost Drivers**
-- **Finding:** $394 difference between Ibuprofen and Lipitor treatments
-- **Action:** Examine medication selection patterns and treatment complexity correlation
-- **Expected Impact:** Optimize medication protocols and cost management
-
-### Strategic Initiatives
-
-**4. Build Predictive Models**
-- Develop patient outcome forecasting based on demographics and conditions
-- Identify high-risk populations requiring proactive intervention
-- Enable preventive care strategies
-
-**5. Implement Real-Time Monitoring**
-- Create operational dashboards for clinical teams
-- Automated alerts for cost or quality anomalies
-- Track improvement initiative progress
-
----
-
-## Technical Architecture
-
-### Database Design
-- **MySQL database** with normalized schema
-- **55,392 patient records** indexed for query performance
-- **Foreign key constraints** ensuring data integrity
-
-### Query Optimization
-- **40+ SQL queries** with strategic indexing
-- **SQLAlchemy ORM** with @st.cache_resource for query result caching
-- **Dynamic WHERE clause construction** based on user filter selections
-- **Sub-second response times** for all queries
-
-### Streamlit Features
-- **Session state management** for persistent filter selections across pages
-- **Multi-select widgets** enabling complex filter combinations
-- **Custom CSS styling** for professional UI design
-- **Two-column responsive layouts** adapting to filter selections
+**3. Implement Predictive Analytics**
+- Build patient outcome forecasting models and real-time monitoring dashboards
+- Expected Impact: Enable proactive intervention and operational efficiency improvements
 
 ---
 
@@ -281,9 +238,7 @@ The project demonstrates competency with real-world methodologies and tools, but
 
 ## Future Enhancements
 
-- **Machine learning integration** — patient outcome prediction models
-- **External benchmarking** — compare metrics against industry standards
-- **Expanded variables** — add comorbidities, procedures, readmission rates
-- **User authentication** — role-based access control for different stakeholders
-- **Export functionality** — PDF reports and CSV data exports
-- **Advanced analytics** — cohort analysis and longitudinal patient tracking
+- **Machine learning** — patient outcome prediction and risk stratification models
+- **External benchmarking** — industry standard comparisons and performance metrics
+- **Enhanced variables** — comorbidities, procedures, readmission rates, patient satisfaction scores
+- **Advanced features** — role-based access control, PDF exports, cohort analysis, longitudinal tracking
